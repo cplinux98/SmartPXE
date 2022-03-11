@@ -1,0 +1,15 @@
+[Unit]
+Description=SmartPXE App Server
+After=network.target
+
+[Service]
+User=root
+Environment=TERM=xterm-256color
+WorkingDirectory=/opt/SmartPXE/
+ExecStart=/usr/local/bin/uwsgi --ini /opt/SmartPXE/service_conf/uwsgi.ini
+Restart=always
+KillSignal=SIGQUIT
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
