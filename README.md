@@ -15,9 +15,9 @@
 	nginx
 
 任务运行使用的技术
-    ansilbe_runner
-    redis
-    celery
+	ansilbe_runner
+	redis
+	celery
 ```
 
 ## 项目功能
@@ -35,11 +35,13 @@
 
 ## 项目文档与演示
 
+项目演示 http://demo.smartpxe.com
+
 项目文档 http://docs.smartpxe.com
 
-部署项目 
+部署项目 http://docs.smartpxe.com/#/document/install
 
-项目演示 http://demo.smartpxe.com
+视频演示 https://www.bilibili.com/video/BV1C34y187ph?share_source=copy_web
 
 ## 项目进度
 
@@ -65,3 +67,41 @@
 - [ ] 硬件配置
   - [ ] ipmi配置
   - [ ] 阵列卡配置
+
+
+## 参考地址
+
+```
+BootOS
+https://www.xiaocoder.com/2020/03/29/build-bootos-system/
+
+Cloud Boot
+https://github.com/idcos/osinstall
+
+archlinux
+wiki.archlinux.org
+
+创建自定义 Ubuntu 映像
+https://maas.io/docs/snap/2.9/ui/creating-a-custom-ubuntu-image
+
+基于物理服务器进行ramos定制
+http://www.360doc.com/content/20/1218/13/13328254_952190955.shtml
+
+构建内存OS，基于ubuntu
+http://linuxcoming.com/blog/2019/06/21/build_ram_os.html
+
+网络引导安装ubuntu
+https://ubuntu.com/server/docs/install/netboot-amd64
+
+自定义initramfs
+https://wiki.gentoo.org/wiki/Custom_Initramfs
+
+精通initramfs
+https://www.cnblogs.com/ztguang/p/12647255.html
+
+PXELINUX
+https://wiki.syslinux.org/wiki/index.php?title=PXELINUX
+
+Redhat
+https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/6/html/installation_guide/sn-booting-from-pxe-x86
+```
