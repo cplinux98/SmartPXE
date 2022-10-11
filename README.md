@@ -35,13 +35,13 @@
 
 ## 项目文档与演示
 
-项目演示 http://demo.smartpxe.com
+项目演示 http://smartpxe_demo.linux98.com
 
-项目文档 http://docs.smartpxe.com
+项目文档 http://smartpxe.linux98.com
 
-部署项目 http://docs.smartpxe.com/#/document/install
+部署项目 http://smartpxe.linux98.com/document/install.html
 
-视频演示 https://www.bilibili.com/video/BV1C34y187ph?share_source=copy_web
+视频演示 https://www.bilibili.com/video/BV1C34y187ph
 
 ## 项目进度
 
