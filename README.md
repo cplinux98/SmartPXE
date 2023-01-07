@@ -105,3 +105,78 @@ https://wiki.syslinux.org/wiki/index.php?title=PXELINUX
 Redhat
 https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/6/html/installation_guide/sn-booting-from-pxe-x86
 ```
+
+
+## 开发项目
+
+### 配置pip
+
+```bash
+mkdir ~/.pip
+vim ~/.pip/pip.conf
+
+# 输入下面的内容
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+
+[install]
+trusted-host=mirrors.aliyun.com
+
+
+```
+
+### 安装依赖包
+```commandline
+sudo apt install libmysqlclient-dev python3-dev gcc
+pip3 install -r requirements
+```
+
+### 创建数据库
+
+```sql
+CREATE DATABASE `smartpxe` CHARACTER SET 'utf8mb4'
+```
+
+### 迁移数据库
+
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+### 创建超级用户
+
+```bash
+python3 manage.py createsuperuser
+```
+
+### 启动项目
+
+```bash
+# open dev
+smartpxe.settings.py -> CONF_STATUS = 0
+python3 manage.py runserver 0.0.0.0:8000
+```
+
+### build
+
+```bash
+python setup.py sdist --formats=gztar
+# dist/SmartPXE-version.tar.gz
+```
+
+
+### install
+
+```bash
+1.从百度网盘下载 smartpxe_install_require.zip依赖文件
+2.修改install.sh里面的版本号
+3.将软件包放置在install.sh同级目录下
+4.执行安装（root权限）
+```
+
+```angular2html
+链接：https://pan.baidu.com/s/1jJJ0ZMigI7bN_8bnkz1Q-Q?pwd=m3qj 
+提取码：m3qj
+```
+

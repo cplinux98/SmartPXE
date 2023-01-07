@@ -1,14 +1,14 @@
 from django.contrib import admin
 from django.urls import path
-from .views import get_sys_info, get_status_info
+from .views import get_sys_info, get_status_info, get_history_info
 from rest_framework.routers import SimpleRouter
 
 router = SimpleRouter()
 
-
 urlpatterns = [
     path('sysinfo/', get_sys_info),
-    path('status/', get_status_info)
+    path('status/', get_status_info),
+    path('history/', get_history_info)
 ] + router.urls
 
 

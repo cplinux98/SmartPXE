@@ -3,9 +3,9 @@ from glob import glob
 
 setuptools.setup(
     name="SmartPXE",
-    version="0.5.1",
+    version="0.6.0",
     author="lcp",
-    author_mail="lcp@linux98.com",
+    author_mail="cplinux98@gmail.com",
     description="SmartPXE Devops Management",
     url="https://www.linux98.com",
     classifiers=[

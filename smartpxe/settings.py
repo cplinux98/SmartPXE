@@ -110,7 +110,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -183,7 +183,7 @@ else:
             'NAME': 'smartpxe',
             'USER': 'root',
             'PASSWORD': '123456',
-            'HOST': '127.0.0.1',
+            'HOST': '172.16.54.1',
             'PORT': '3306',
         }
     }
@@ -215,7 +215,7 @@ else:
         # ],
         'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
         'DEFAULT_PAGINATION_CLASS': 'utils.paginations.PageNumberPagination',
-        'PAGE_SIZE': 5,
+        'PAGE_SIZE': 10,
     }
 
     # jwt认证配置
